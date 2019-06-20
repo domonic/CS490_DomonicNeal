@@ -25,5 +25,4 @@ Apply PCA on the same dataset
 Apply kmeans algorithm on the PCA result and report your observation if the score improved or not?
 
 After observing the two scores performing PCA and then using the KMeans Algorithm on the data again the score did imporve and
-was closer to 0 because of the scaling done with PCA oppose to simply performing KMeans Algorithm on the data which did not do scaling
-and resulted in a higher score than the PCA.
+was closer to 0 because of the scaling done with PCA oppose to simply performing KMeans Algorithm on the data which resulted in a lower score than the PCA.
