@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from keras.models import Sequential
 from keras.layers.core import Dense, Activation
 from keras.utils import to_categorical
-from sklearn.preprocessing import LabelEncoder
+
 
 dataset = pd.read_csv("diabetes.csv", header=None).values
 
