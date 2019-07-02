@@ -35,7 +35,7 @@ breast_dataset_x = breast_dataset.iloc[:, 2:32]
 '''Target from CSV'''
 breast_dataset_y = breast_dataset.iloc[:, 1]
 
-'''Change the target from categorical to numerical'''
+'''Change the target to numerical'''
 breast_dataset_y = to_categorical(breast_dataset_y.replace({'B': 0, 'M': 1}))
 
 
@@ -48,6 +48,7 @@ model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy']
 model_fitted = model.fit(breast_dataset_x, breast_dataset_y, epochs=100, verbose=0, initial_epoch=0)
 print(model.summary())
 print(model.evaluate(breast_dataset_x, breast_dataset_y, verbose=0))
+
 
 
 
