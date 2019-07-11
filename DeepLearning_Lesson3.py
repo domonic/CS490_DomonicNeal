@@ -5,7 +5,7 @@ import pandas as pd
 from keras_preprocessing.sequence import pad_sequences
 from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
-
+import matplotlib.pyplot as plt
 from sklearn.datasets import fetch_20newsgroups
 newsgroups_train =fetch_20newsgroups(subset='train', shuffle=True)
 sentences = newsgroups_train.data
@@ -58,4 +58,19 @@ history=model.fit(X_train,y_train, epochs=2, verbose=True, validation_data=(X_te
 
 [test_loss, test_acc] = model.evaluate(X_test, y_test)
 print("Evaluation result on Test Data : Loss = {}, accuracy = {}".format(test_loss, test_acc))
+
+
+#BONUS
+''' plot the loss and accuracy for both training data and validation data'''
+plt.plot(history.history['acc'])
+plt.plot(history.history['val_acc'])
+plt.title('Accuracy')
+plt.legend(['train', 'validation'])
+plt.show()
+
+plt.plot(history.history['loss'])
+plt.plot(history.history['val_loss'])
+plt.title('Loss')
+plt.legend(['train', 'validation'])
+plt.show()
 
