@@ -10,8 +10,8 @@ Part 1: Follow the instruction below and then report how the performance changed
               Test loss 1.8744162601470948
               Test Accuracy: 31.97%
   After Changes:
-              Test loss 2.0557794059753416
-              Test Accuracy: 24.96%
+              Test loss 2.0247176322937013
+              Test Accuracy: 27.88%
               
               
 Part 2: Visualize the graphand losswith TensorBoard
