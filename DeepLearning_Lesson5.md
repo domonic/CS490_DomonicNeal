@@ -13,4 +13,5 @@ PART 2: Apply GridSearchCV on the source code provided in the class
         Best: 0.675885 using {'batch_size': 20, 'epochs': 2}
         
 PART 3: Apply the code on spamdata set available in the source code (text classification on the spam.csv data set)
-        
+        Score Spam: 0.08346213615520201
+        Accuracy Spam:  0.9766177270255574
