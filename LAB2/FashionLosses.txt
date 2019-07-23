@@ -1,0 +1,7 @@
+Original Run run: loss = .35
+2nd run (Changing only OPTIMIZER): loss = .42
+3rd run (Changning only activation): loss = .35
+4th run (Changing only batch_size): loss = .36
+5th run (Changing only learning rate): loss = .41
+6th run (ALL CHANGES): loss = .51
+
